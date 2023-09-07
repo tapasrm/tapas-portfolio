@@ -1,52 +1,38 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
 const pageTitle = "Works";
 ---
+
 <Layout pageTitle={pageTitle}>
-    <div class="gif">
-        <img width="300" height="259" alt="RaccoonLaptopGif" src="/laptop.webp"/>
-    </div>
-    <h2>Contributions</h2>
-    <ul role="list" class="link-card-grid">
-        <Card
-            href="https://github.com/"
-            image="/GitHub.webp"
-            title="Open-source 1"
-            body="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci"
-        />
-        <Card
-            href="https://github.com/"
-            image="/GitHub.webp"
-            title="Open-source 2"
-            body="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci"
-        />
-    </ul>
-    <h2>Projects</h2>
-    <ul role="list" class="link-card-grid">
-        <Card
-            href="https://github.com/"
-            image="/GitHub.webp"
-            title="Project 1"
-            body="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci"
-        />
-        <Card
-            href="https://github.com/"
-            image="/GitHub.webp"
-            title="Project 2"
-            body="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci"
-        />
-        <Card
-            href="https://github.com/"
-            image="/GitHub.webp"
-            title="Project 3"
-            body="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci"
-        />
-        <Card
-            href="https://github.com/"
-            image="/GitHub.webp"
-            title="Project 4"
-            body="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci"
-        />
-    </ul>
+  <div class="gif">
+    <img width="300" height="259" alt="RaccoonLaptopGif" src="/laptop.webp" />
+  </div>
+  <h2>Projects</h2>
+  <ul role="list" class="link-card-grid">
+    <Card
+      href="https://github.com/tapasrm/chatbot"
+      image="/bot.png"
+      title="Supervised Chatbot"
+      body="A simple chatbot trained on dummy training data. Great at handling scenarios defined in the training data."
+    />
+    <Card
+      href="https://github.com/tapasrm/diy-shell-rust"
+      image="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-plain.svg"
+      title="DIY shell in Rust"
+      body="Basic Bash shell from scratch in Rust"
+    />
+    <Card
+      href="https://github.com/tapasrm/tcp"
+      image="/tcp.png"
+      title="TCP Server in C"
+      body="Netcat utility implementation in C. Connection established using TCP."
+    />
+    <Card
+      href="https://github.com/tapasrm/chat-app"
+      image="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg"
+      title="Chat App in Rust"
+      body="I am currently learning Rust programming Language so built this Chat-app."
+    />
+  </ul>
 </Layout>
